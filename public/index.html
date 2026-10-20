@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="km">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b18"><meta name="description" content="TraLink — Shorten your links fast.">
+<title>TraLink — Shorten links</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-icon">↗</span>Tra<span>Link</span></a><nav><a href="#shortener">កាត់ Link</a><a href="#features">មុខងារ</a><a href="#manage">គ្រប់គ្រង</a></nav></header>
+<main>
+<section class="hero" id="shortener"><div class="pill"><span class="dot"></span> FREE LINK SHORTENER</div><h1>Shorten Your Links<br><span>Fast & Beautiful</span></h1><p class="sub">បម្លែង Link វែងឱ្យខ្លី ងាយចែករំលែក និងគ្រប់គ្រងបាន។</p>
+<form id="shortenForm" class="shorten-box"><span class="link-symbol">↗</span><input id="longUrl" type="url" placeholder="https://example.com/your-long-link..." required><input id="customSlug" class="alias" placeholder="Alias (optional)" maxlength="24"><button type="submit" id="shortenBtn">✦ កាត់ Link</button></form>
+<div id="message" class="message" aria-live="polite"></div>
+<div id="result" class="result hidden"><div><small>LINK របស់អ្នក</small><a id="shortUrl" href="#" target="_blank" rel="noopener"></a></div><button id="copyBtn" class="copy">ចម្លង</button></div>
+<div class="features" id="features"><div class="feature"><b>ϟ</b><strong>រហ័ស</strong><small>Redirect ភ្លាមៗ</small></div><div class="feature"><b>◇</b><strong>ផ្ទាល់ខ្លួន</strong><small>កំណត់ Alias បាន</small></div><div class="feature"><b>▥</b><strong>ស្ថិតិ Click</strong><small>រាប់ចំនួនចុច</small></div></div></section>
+<section class="manage" id="manage"><div class="section-heading"><div><span class="eyebrow">YOUR WORKSPACE</span><h2>គ្រប់គ្រង Link</h2></div><span class="secure">ADMIN ONLY</span></div><p class="muted">បញ្ចូល Admin Key ដែលបានកំណត់ក្នុង Vercel ដើម្បីមើល Link និងចំនួន Click។</p>
+<form id="adminForm" class="admin-form"><input id="adminKey" type="password" placeholder="Admin Key" autocomplete="current-password"><button type="submit">មើល Link</button></form><div id="adminMessage" class="message"></div>
+<div class="table-wrap"><table><thead><tr><th>Short Link</th><th>Original URL</th><th>Clicks</th><th>បង្កើតនៅ</th></tr></thead><tbody id="linkRows"><tr><td colspan="4" class="empty">បញ្ចូល Admin Key ដើម្បីមើល Link របស់អ្នក។</td></tr></tbody></table></div></section>
+</main><footer><a class="brand small-brand" href="/">↗ Tra<span>Link</span></a><span>Shorter links, bigger possibilities.</span><span>Built for Tra-dev ✦</span></footer>
+<script src="/app.js" defer></script></body></html>
